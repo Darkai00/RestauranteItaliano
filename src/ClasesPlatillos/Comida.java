@@ -9,21 +9,45 @@ package ClasesPlatillos;
  * @author alepe
  */
 public class Comida {
+    private String nombre;
     private String temperatura;
+    private String ingredientes;
     private String tipoComida;
     private short calorias;
     private short tiempoPreparacion;
 
-    public Comida(String temperatura, String tipoComida, short calorias, short tiempoPreparacion) {
+    public Comida(String nombre, String temperatura, String ingredientes, String tipoComida, short calorias, short tiempoPreparacion) {
+        this.nombre = nombre;
         this.temperatura = temperatura;
+        this.ingredientes = ingredientes;
         this.tipoComida = tipoComida;
         this.calorias = calorias;
         this.tiempoPreparacion = tiempoPreparacion;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getIngredientes() {
+        return ingredientes;
+    }
+
+    public void setIngredientes(String ingredientes) {
+        this.ingredientes = ingredientes;
+    }
+    
+    
+    
     public String getTemperatura() {
         return temperatura;
     }
+
+    
 
     public void setTemperatura(String temperatura) {
         this.temperatura = temperatura;
